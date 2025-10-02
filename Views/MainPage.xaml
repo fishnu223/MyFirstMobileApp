@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                x:Class="MyFirstMobileApp.Views.MainPage"
+                Title="MainPage">
+    
+    <ContentPage.Resources>
+                <Color x:Key="PageBackground">#F5F7FA</Color>
+                <Color x:Key="ButtonBgColor">#F7B571</Color>
+                <Color x:Key="ButtonTextColor">White</Color>
+                <Color x:Key="ButtonHoverColor">#A10420</Color>
+
+                <Style TargetType="Button" 
+                       x:Key="ButtonPrimary">
+                <Setter Property="BackgroundColor" 
+                        Value="{StaticResource ButtonBgColor}" />
+                <Setter Property="TextColor" 
+                           Value="{StaticResource ButtonTextColor}" />
+                <Setter Property="CornerRadius" 
+                        Value="12" />
+                <Setter Property="HeightRequest" 
+                        Value="60" />
+                <Setter Property="FontSize" 
+                        Value="16" />
+                <Setter Property="FontAttributes" 
+                        Value="Bold" />
+                </Style>
+    
+                </ContentPage.Resources>
+
+                <VerticalStackLayout Padding="24,16"
+                                     Spacing="24"
+                                     BackgroundColor="{StaticResource PageBackground}"
+                                     SemanticProperties.Description="Main menu page">
+
+     
+        
+                <Grid RowSpacing="20"
+                      ColumnSpacing="20"
+                      Padding="0">
+
+           
+                <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="LayoutsButton"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Text="Layouts"
+                        Style="{StaticResource ButtonPrimary}"
+                        SemanticProperties.Description="Navigate to layouts page" />
+
+                <Button x:Name="ImagesButton"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Text="Images"
+                        Style="{StaticResource ButtonPrimary}"
+                        SemanticProperties.Description="Navigate to images page" />
+
+            
+                <Button x:Name="CollectionsButton"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Collections"
+                        Style="{StaticResource ButtonPrimary}"
+                        SemanticProperties.Description="Navigate to collections page" />
+
+                <Button x:Name="ControlsButton"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Text="Controls"
+                        Style="{StaticResource ButtonPrimary}"
+                        SemanticProperties.Description="Navigate to controls page" />
+
+
+                < x:Name = "SqlLiteButton"
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Text="SQL Lite"
+                        Style="{StaticResource ButtonPrimary}"
+                        SemanticProperties.Description="Navigate to SQL Lite database page" />
+
+                </Grid>
+
+                </VerticalStackLayout>
+
+</ContentPage>
