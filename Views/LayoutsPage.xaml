@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMobileApp.Views.LayoutsPage"
+             Title="{Binding Title}">
+
+    <VerticalStackLayout>
+
+        <Grid Margin="25, 35, 20, 20">
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="*"/>
+
+                <RowDefinition Height="*"/>
+
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="*"/>
+
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Button Text="{Binding TitleButtonStackLayout}" 
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource TileButtonTypeTwo}"/>
+
+            <Button Text="{Binding TitleButtonVerticalStack}" 
+                Grid.Row="1"
+                Grid.Column="0"
+                Style="{StaticResource TileButtonTypeTwo}"/>
+
+            <Button Text="{Binding TitleButtonHorizontalStack}" 
+                Grid.Row="1"
+                Grid.Column="1"
+                Style="{StaticResource TileButtonTypeTwo}"/>
+
+            <Button Text="{Binding TitleButtonAbsoluteLayout}" 
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource TileButtonTypeTwo}"/>
+
+        </Grid>
+
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,9 +1,12 @@
+using MyFirstMobileApp.ViewModels;
+
 namespace MyFirstMobileApp.Views;
 
 public partial class MainPage : ContentPage
 {
 	public MainPage()
 	{
-        InitializeComponent();
+       InitializeComponent();
+	   BindingContext = new MainViewModel();
 	}
 }

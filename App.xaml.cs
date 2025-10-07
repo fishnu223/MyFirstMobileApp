@@ -8,8 +8,10 @@ namespace MyFirstMobileApp
         {
             InitializeComponent();
 
-           // MainPage = new AppShell();
-           MainPage = new MainPage();
+            //MainPage = new AppShell();
+            //MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
+            
         }
     }
 }
