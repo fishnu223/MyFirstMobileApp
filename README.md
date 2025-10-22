@@ -1,1 +1,1 @@
-# MyFirstMobileApp - Copy
+# MyFirstMobileApp
