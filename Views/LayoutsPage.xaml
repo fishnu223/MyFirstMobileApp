@@ -4,9 +4,11 @@
              x:Class="MyFirstMobileApp.Views.LayoutsPage"
              Title="{Binding Title}">
 
-    <VerticalStackLayout>
+    <VerticalStackLayout Padding="24,16" Spacing="24" >
 
-        <Grid Margin="25, 35, 20, 20">
+        <Grid RowSpacing="20"
+              ColumnSpacing="20"
+              Padding="0">
 
             <Grid.RowDefinitions>
 
@@ -46,7 +48,8 @@
                 Grid.Row="2"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource TileButtonTypeTwo}"/>
+                Style="{StaticResource TileButtonTypeTwo}"
+                />
 
         </Grid>
 

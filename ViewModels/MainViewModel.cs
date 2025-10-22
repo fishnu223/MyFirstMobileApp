@@ -30,7 +30,6 @@ namespace MyFirstMobileApp.ViewModels
 
         [ObservableProperty]
         private string titleButtonSQLLite = TitleMain.TitleButtonSQLLite;
-        //public ICommand OnLayoutsClicked { get; set; }
         public MainViewModel()
         {
             
@@ -38,7 +37,7 @@ namespace MyFirstMobileApp.ViewModels
         }
 
         [RelayCommand]
-        private async Task LayoutsClickedAsync()
+        private async Task LayoutsClicked()
         {
             await Shell.Current.GoToAsync(nameof(LayoutsPage));
         }

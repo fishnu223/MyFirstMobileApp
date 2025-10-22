@@ -5,9 +5,11 @@
                 Title="{Binding Title}">
 
 
-    <VerticalStackLayout>
+    <VerticalStackLayout Padding="24,16" Spacing="24">
 
-        <Grid Margin="25, 35, 20, 20">
+        <Grid RowSpacing="20"
+              ColumnSpacing="20"
+              Padding="0">
 
             <Grid.RowDefinitions>
 
@@ -31,7 +33,7 @@
             Grid.Row="0"
             Grid.Column="0"
             Style="{StaticResource TileButton}"
-            Command="{Binding OnLayoutsClicked}"/>
+            Command="{Binding LayoutsClickedCommand}"/>
 
             <Button Text="{Binding TitleButtonImages}"
             Grid.Row="0"
